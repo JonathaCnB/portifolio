@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'csssite3/style.css' %}">
+  <title>Noticias Cidade</title>
+
+</head>
+	<body id="duas-colunas" class="brasil">
+		<div id="container"><!-- Inicio do Container-->
+
+			<div id="topo"> <!-- Inicio do Top-->
+				<h1 class="logo" alt="Noticias Cidade"></h1>
+				<ul class="navegacao">
+					<li class="primeiro"><a id="home" href="#">Home</a></li>
+					<li>
+						<a id="brasil" href="{% url 'pages:noticiasbrasil' %}">Brasil</a>
+					</li>
+					<li>
+						<a id="fotos" href="{% url 'pages:noticiasfotos' %}">Fotos</a>
+					</li>
+					<li>
+						<a id="saude" href="#">Saúde</a>
+					</li>
+					<li>
+						<a id="ciencia" href="#">Ciência</a>
+					</li>
+					<li>
+						<a id="internacional" href="#">Internacional</a>
+					</li>
+					<li>
+						<a id="internacional" href="{% url 'pages:home' %}">Voltar</a>
+					</li>
+				</ul>
+			</div> <!-- Fim do Top-->
+
+			<div id="conteudo"> <!-- Inicio do Conteudo-->
+
+				<div id="primario"><!-- Inicio coluna de destaque-->
+
+					<div class="caixa destaque"><!-- Inicio da box noticia principal-->
+						<h2> Destaque </h2>
+						<div class="caixa-conteudo">
+							<h3>Nova Legislação</h3>
+							<img class="img-principal" src="{% static 'imgsite3/taxi.jpg' %}">
+							<p>
+								Lorem Ipsum é simplesmente uma simulação de textoI
+							</p>
+							<a href="">Leia Mais</a>
+						</div>
+					</div><!-- Fim da box noticia principal-->
+
+					<div class="caixa"><!-- Inicio lista de noticas destaques-->
+						<h2> Mundo </h2>
+						<div class="caixa-conteudo">
+							<ul id="lista-noticias">
+								<li>
+									<a href="">
+										<img src="{% static 'imgsite3/tecnologia.jpg' %}" width="80">
+										<h3>Novas Tecnologias</h3>
+										<p>Lorem Ipsum é simplesmente uma simulação</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="{% static 'imgsite3/cidade.jpg' %}" width="80">
+										<h3>Novas Tecnologias</h3>
+										<p>Lorem Ipsum é simplesmente uma simulação</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="{% static 'imgsite3/mundo.jpg' %}" width="80">
+										<h3>Novas Tecnologias</h3>
+										<p>Lorem Ipsum é simplesmente uma simulação</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="{% static 'imgsite3/doutor.jpg' %}" width="80">
+										<h3>Novas Tecnologias</h3>
+										<p>Lorem Ipsum é simplesmente uma simulação</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div><!-- Fim da lista de noticas destaques-->
+
+				</div> <!-- Fim da coluna de destaque-->
+
+				<!-- Inicio lateral -->
+				<div id="lateral">
+					<div class="caixa"><!-- Inicio Menu Lateral -->
+						<h2> Entrevistas </h2>
+						<div class="caixa-conteudo">
+
+							<ul>
+								<li><a href="">José Almeida</a></li>
+								<li><a href="">Felipe Silva</a></li>
+								<li><a href="">Renato Rodrigues</a></li>
+								<li><a href="">Aberto Silveira</a></li>
+								<li><a href="">André Carlos</a></li>
+								<li><a href="">Márcio Mello</a></li>
+								<li><a href="">João Pedro</a></li>
+								<li><a href="">Fernando Weiss</a></li>
+							</ul>
+
+						</div>
+					</div><!-- Fim Menu Lateral -->
+
+					<div class="caixa"><!-- Inicio da box News -->
+						<h2> News </h2>
+						<div class="caixa-conteudo">
+							<form>
+								<div>
+									<label for="email">Email:</label>
+									<input type="text" name="email" id="email" placeholder="Digite seu melhor e-mail">
+								</div>
+								<div>
+									<input type="submit" value="Cadastrar">
+								</div>
+							</form>
+
+						</div><!-- Fim da box News -->
+					</div><!-- Fim Menu Lateral -->
+
+				</div>
+				<!-- Fim lateral -->
+
+			</div><!-- Fim do Conteudo-->
+
+		</div><!-- Fim do container-->
+
+		<div id="rodape">
+			<div class="rodape">
+				&copy; Copyright 2000-2020 Notícias Cidade 
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu Nacional</title>
+
+  <!-- Estilo customizado -->
+  <link rel="stylesheet" type="text/css" href="{% static 'csssite5/estilo.css' %}">
+
+  <!-- Normalize CSS-->
+   <link rel="stylesheet" type="text/css" href="{% static 'csssite5/normalize.css' %}">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous"></script>
+
+</head>
+	<body>
+		<div id="container"> <!-- Inicio Container -->
+
+			<header><!-- Inicio Header -->
+				<div id="logo">
+					<h1><a href="">Museu Nacional</a></h1>
+				</div>
+
+				<nav><!-- Inicio Navegação Vertical -->
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Exposições</a></li>
+						<li><a href="">Pesquisa</a></li>
+						<li><a href="">Acervo</a></li>
+						<li><a href="">Vídeos</a></li>
+						<li><a href="">Fotos</a></li>
+						<li><a href="{% url 'pages:home' %}">Voltar</a></li>
+					</ul>
+				</nav><!-- /Fim Navegação Vertical -->
+
+			</header><!-- /Fim Header -->
+
+			<div id="principal"><!-- Inicio Principal -->
+				<div id="conteudos"><!-- Inicio Coluna Conteudos -->
+					<section id="capa">
+						<img src="{% static 'imgsite5/museu.png' %}">
+					</section>
+
+					<section id="postagens"><!-- Inicio Postagens -->
+						<article id="video">
+							<h3>Vídeo: Conheça o museu</h3>
+							<iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</article>
+
+						<article id="mapa">
+							<h3>Mapa: encontre o museu</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.201648696513!2d-59.93314908471522!3d-3.040545797785738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1c085a21ad3d%3A0x71ab6874a872ce66!2sDigital%20Tree%20Solu%C3%A7%C3%B5es%20em%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1608764358576!5m2!1spt-BR!2sbr" width="310" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</article>
+
+						<article id="exposicoes">
+							<h3>Exposições</h3>
+							<ul>
+								<li>
+									<a href="">Os assustadores insetos</a>
+								</li>
+								<li>
+									<a href="">O crânio de Luiz, a mulher mais antiga do Brasil</a>
+								</li>
+								<li>
+									<a href="">Preguiça gigante e tigre-dentes-de-sabre</a>
+								</li>
+								<li>
+									<a href="">Plantas do Brasil Central</a>
+								</li>
+								<li>
+									<a href="">Teresa Cristina: A Imperatriz Arqueóloga</a>
+								</li>
+								<li>
+									<a href="">Arte com dinossauros - Paleoarte</a>
+								</li>
+								<li>
+									<a href=""><strong>Veja todos (65)</strong></a>
+								</li>
+							</ul>
+						</article>
+
+						<article id="historia">
+							<h3>200 anos de história</h3>
+							<p>
+								Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponta do Calabouço, entre as praias de Piaçaba e Santa Luiza, no centro histórico do Rio de Janeiro, os portugueses construíram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.
+							</p>
+							<a href=""><strong>Leia Mais</strong></a>
+						</article>
+					</section><!-- /Fim Postagens -->
+
+
+				</div><!-- /Fim Coluna Conteudos -->
+
+				<aside><!-- Inicio Coluna Lateral -->
+					<section id="depoimento">
+						<img src="{% static 'imgsite5/depoimento.png' %}">
+					</section>
+
+					<section id="visita"><!-- Inicio Campo Faça uma Visita -->
+						<h4>Faça uma visita</h4>
+						<form>
+							<fieldset>
+								<legend>Selecione uma data</legend>
+
+								<label for="data">Data</label>
+								<input class="campo" type="text" id="data" value="dd/mm/aaa">
+
+								<label for="qtd">Qtd pessoas</label>
+								<input class="campo" style="width:30px" type="text" id="qtd" value="1">
+
+							</fieldset>
+
+							<input class="botao" type="submit" value="Verificar Disponibilidade">
+						</form>
+					</section><!-- /Fim Campo Faça uma Visita -->
+
+					<section id="galeria"><!-- Inicio Galeria de Fotos -->
+						<h4>Galeria de fotos</h4>
+
+						<a href="">
+							<img src="{% static 'imgsite5/imagem1.jpg' %}" height="93" width="93">
+						</a>
+						<a href="">
+							<img src="{% static 'imgsite5/imagem2.jpg' %}" height="93" width="93">
+						</a>
+						<a href="">
+							<img src="{% static 'imgsite5/imagem3.jpg' %}" height="93" width="93">
+						</a>
+						<a href="">
+							<img src="{% static 'imgsite5/imagem4.jpg' %}" height="93" width="93">
+						</a>
+
+					</section><!-- /Fim Galeria de Fotos -->
+
+				</aside><!-- /Fim Coluna Lateral -->
+
+				<footer style="clear: both;">
+					<p>
+						<a href="">Home</a>
+						<a href="">Exposições</a>
+						<a href="">Pesquisa</a>
+						<a href="">Acervo</a>
+						<a href="">Vídeos</a>
+						<a href="">Fotos</a>
+						<a href="">Contato</a>
+					</p>
+					<p>
+						2021 <a href="">Museu Nacional</a> - Todos os direitos Reservados.
+					</p>
+				</footer>
+
+			</div><!-- /Fim Principal -->
+
+		</div><!-- /Fim Container -->
+	</body>
+</html>

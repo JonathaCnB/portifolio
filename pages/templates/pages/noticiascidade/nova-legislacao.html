@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'csssite3/style.css' %}">
+
+  <title>Noticias Cidade</title>
+
+</head>
+	<body id="uma-coluna" class="fotos">
+		<div id="container"><!-- Inicio do Container-->
+
+			<div id="topo"> <!-- Inicio do Top-->
+				<h1 class="logo" alt="Noticias Cidade"></h1>
+				<ul class="navegacao">
+					<li class="primeiro"><a id="home" href="#">Home</a></li>
+					<li>
+						<a id="brasil" href="{% url 'pages:noticiasbrasil' %}">Brasil</a>
+					</li>
+					<li>
+						<a id="fotos" href="{% url 'pages:noticiasfotos' %}">Fotos</a>
+					</li>
+					<li>
+						<a id="saude" href="#" disabed>Saúde</a>
+					</li>
+					<li>
+						<a id="ciencia" href="#" disabed>Ciência</a>
+					</li>
+					<li>
+						<a id="internacional" href="#">Internacional</a>
+					</li>
+					<li>
+						<a id="internacional" href="{% url 'pages:home' %}">Voltar</a>
+					</li>
+				</ul>
+			</div> <!-- Fim do Top-->
+
+			<div id="conteudo"> <!-- Inicio do Conteudo-->
+
+				<div id="primario"><!-- Inicio coluna de destaque-->
+
+					<div class="caixa destaque"><!-- Inicio da box noticia principal-->
+						<h2> Destaque </h2>
+						<div class="caixa-conteudo">
+							<h3>Nova Legislação</h3>
+							<img class="img-principal" src="{% static 'imgsite3/taxi.jpg' %}">
+							<p>
+								Lorem Ipsum é simplesmente uma simulação de textoI
+							</p>
+							<p>
+								indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+							</p>
+
+						</div>
+					</div><!-- Fim da box noticia principal-->
+
+				</div> <!-- Fim da coluna de destaque-->
+
+			</div><!-- Fim do Conteudo-->
+
+		</div><!-- Fim do container-->
+
+		<div id="rodape">
+			<div class="rodape">
+				&copy; Copyright 2000-2020 Notícias Cidade
+			</div>
+		</div>
+	</body>
+</html>

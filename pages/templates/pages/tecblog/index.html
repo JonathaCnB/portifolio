@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'csssite2/style.css' %}">
+
+  <title>TecBlocg - O seu Blog de tecnologia</title>
+</head>
+	<body>
+		<div id="area-cabecalho">
+			<div id="area-logo">
+				<h1>Tec<span class="branco">Blog</span></h1>
+			</div>
+			<div id="area-menu">
+				<a href="{% url 'pages:tecnoblog' %}">Home</a>
+				<a href="#">Jogos</a>
+				<a href="#">Celulares</a>
+				<a href="#">Infomática</a>
+				<a href="#">Eletrônicos</a>
+				<a href="{% url 'pages:home' %}">Voltar</a>
+			</div>
+		</div> <!--Fim area cabecalho-->
+
+		<div id="area-principal">
+			<div id="area-postagens">
+				<!--Abertura postagem-->
+				<div class="postagem">
+					<h2>Titulo da postagem 1</h2>
+					<span class="data-postagem">Postado 18 Dezembro 2020</span>
+					<img width="620px" src="{% static 'imgsite2/imagem1.jpg' %}" alt="Postagem de Notebook">
+					<p>
+						Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica,
+					</p>
+					<a href="#">Leia Mais</a>
+				</div><!--// Fechamento Postagem-->
+
+				<!--Abertura postagem-->
+				<div class="postagem">
+					<h2>Titulo da postagem 2</h2>
+					<span class="data-postagem">Postado 20 Dezembro 2020</span>
+					<img width="620px" src="{% static 'imgsite2/imagem2.jpg' %}" alt="Postagem Conectividade">
+					<p>
+						Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica,
+					</p>
+					<a href="#">Leia Mais</a>
+				</div><!--// Fechamento Postagem-->
+			</div>
+
+			<div id="area-lateral">
+				<div class="conteudo-lateral">
+					<h3>Postagens Recentes</h3>
+					<div class="texto-lateral"> <!--Inicio da Postagem Lateral-->
+						<p>
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+						</p>
+						<a href="#">Leia Mais</a>
+					</div>
+
+					<div class="texto-lateral" style="border-bottom: none;">
+						<p>
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+						</p>
+						<a href="#">Leia Mais</a>
+					</div>
+				</div><!--// Fechamento Postagem Lateral-->
+
+				<div class="conteudo-lateral">
+					<h3>Categorias</h3>
+					<a href="">Jogos</a><br>
+					<a href="">Celulares</a><br>
+					<a href="">Infomática</a><br>
+					<a href="">Eletrônicos</a><br>
+					<a href="">Jogos</a><br>
+				</div>
+			</div>
+
+			<div id="area-rodape">
+				Todos os Direitos Reservados
+			</div>
+		</div>
+	</body>
+</html>

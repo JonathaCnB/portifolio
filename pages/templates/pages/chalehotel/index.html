@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'csssite4/style.css' %}">
+
+  <title>Chalé Hotel</title>
+
+</head>
+	<body>
+
+		<div id="container"> <!-- Inicio Container -->
+			<div id="topo"><!-- Inicio Top -->
+				<div id="area-logo">
+					<h1 class="logo">
+						<a href="">Chalé Hotel</a>
+					</h1>
+				</div>
+				<div id="area-menu"><!-- Inicio do Menu Reserva -->
+					<div id="conteudo-menu"><!-- Inicio Menu Reserva -->
+						<div id="menu-locais">
+							<span class="locais">
+								Rio de Janeiro - São Paulo - Belo Horizonte
+							</span>
+							<a class="reserva" href="">Reservar</a>
+							<div style="clear: both"></div>
+						</div>
+						<div id="menu"><!-- Barra de Navegação Vertical -->
+							<ul id="navegacao">
+								<li><a href="">Home</a></li>
+								<li><a href="">História</a></li>
+								<li><a href="">Imprensa</a></li>
+								<li><a href="">Castronomia</a></li>
+								<li><a href="{% url 'pages:home' %}">Voltar</a></li>
+							</ul>
+							<img class="depoimento" src="{% static 'imgsite4/depoimento.png' %}">
+						</div><!-- Fim Barra de Navegação Vertical -->
+					</div><!-- Fim Menu Reserva -->
+				</div><!-- Fim do Menu -->
+			</div><!-- Fim Topo -->
+
+			<div id="area-principal"><!-- Inicio da Area Principal -->
+				<div class="conteudo">
+				<h2>Passagem padrão original de Lorem Ipsum</h2>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, con
+				</p>
+
+				<p>
+					"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit q
+				</p>
+				</div>
+			</div><!-- Fim da Area Principal -->
+
+
+			<div id="area-lateral"><!-- Inicio da Area Lateral -->
+				<div class="conteudo">
+					<ul id="beneficios">
+						<li>
+							<a href="">
+								<img src="{% static 'imgsite4/apartamento.jpg' %}" width="150" alt="Apartamento">
+								<h3>Apartamento</h3>
+								<p>
+									Lorem Ipsum é simplesmente uma simulação
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="{% static 'imgsite4/restaurante.jpg' %}" width="150" alt="Restaurante">
+								<h3>Restaurante</h3>
+								<p>
+									Lorem Ipsum é simplesmente uma simulação
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="{% static 'imgsite4/piscina.jpg' %}" width="150" alt="Piscina">
+								<h3>Piscina</h3>
+								<p>
+									Lorem Ipsum é simplesmente uma simulação
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- Fim da Area Principal -->
+
+			<div id="rodape">
+				&copy; Copyright 2000-2020 Chalé Hotel
+			</div>
+
+		</div><!-- Fim Container -->
+	</body>
+</html>
